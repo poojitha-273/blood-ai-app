@@ -1,0 +1,22 @@
+{
+  "testName": "Stress Testing",
+  "virtualUsers": 80,
+  "durationSeconds": 13,
+  "durationFormatted": "13s",
+  "totalRequests": 1251,
+  "requestsPerSecond": 92.7,
+  "successfulRequests": 1251,
+  "failedRequests": 0,
+  "httpFailureRate": 0,
+  "latency": {
+    "min": 0,
+    "max": 2783,
+    "avg": 804.2,
+    "med": 554,
+    "p90": 1949,
+    "p95": 2098,
+    "p99": 2219
+  },
+  "timestamp": "2026-11-17T15:13:36.256Z",
+  "status": "DEGRADED"
+}

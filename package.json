@@ -1,0 +1,39 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test:perf": "node performance-tests/run-perf-tests.js all",
+    "test:selenium": "node selenium-tests/run-selenium-tests.js",
+    "test:appium": "node appium-tests/run-appium-tests.js",
+    "test:reports": "node test-reports/generate-excel-reports.js",
+    "test:all": "node performance-tests/run-perf-tests.js all && node selenium-tests/run-selenium-tests.js && node appium-tests/run-appium-tests.js && node test-reports/generate-excel-reports.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "exceljs": "^4.4.0",
+    "tailwindcss": "^4.3.5",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/cli": "^8.6.2",
+    "@capacitor/core": "^8.6.2",
+    "@supabase/supabase-js": "^2.119.0",
+    "@vis.gl/react-google-maps": "^1.10.2",
+    "lucide-react": "^1.72.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-hot-toast": "^2.6.1",
+    "react-router-dom": "^7.18.5",
+    "recharts": "^3.10.1"
+  }
+}

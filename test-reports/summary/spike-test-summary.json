@@ -1,0 +1,22 @@
+{
+  "testName": "Spike Testing",
+  "virtualUsers": 100,
+  "durationSeconds": 12,
+  "durationFormatted": "12s",
+  "totalRequests": 1184,
+  "requestsPerSecond": 99.1,
+  "successfulRequests": 1184,
+  "failedRequests": 0,
+  "httpFailureRate": 0,
+  "latency": {
+    "min": 0,
+    "max": 2803,
+    "avg": 912.1,
+    "med": 513,
+    "p90": 2374,
+    "p95": 2645,
+    "p99": 2783
+  },
+  "timestamp": "2026-11-17T15:13:48.208Z",
+  "status": "DEGRADED"
+}

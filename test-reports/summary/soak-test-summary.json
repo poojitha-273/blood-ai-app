@@ -1,0 +1,22 @@
+{
+  "testName": "Soak / Endurance Testing",
+  "virtualUsers": 30,
+  "durationSeconds": 16,
+  "durationFormatted": "16s",
+  "totalRequests": 1163,
+  "requestsPerSecond": 74.3,
+  "successfulRequests": 1163,
+  "failedRequests": 0,
+  "httpFailureRate": 0,
+  "latency": {
+    "min": 0,
+    "max": 1130,
+    "avg": 370.9,
+    "med": 272,
+    "p90": 879,
+    "p95": 936,
+    "p99": 1043
+  },
+  "timestamp": "2026-11-17T15:14:03.873Z",
+  "status": "DEGRADED"
+}

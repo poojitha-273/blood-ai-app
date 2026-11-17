@@ -1,0 +1,22 @@
+{
+  "testName": "Baseline / Load Testing",
+  "virtualUsers": 40,
+  "durationSeconds": 13,
+  "durationFormatted": "13s",
+  "totalRequests": 836,
+  "requestsPerSecond": 63.7,
+  "successfulRequests": 836,
+  "failedRequests": 0,
+  "httpFailureRate": 0,
+  "latency": {
+    "min": 0,
+    "max": 2195,
+    "avg": 586.4,
+    "med": 310,
+    "p90": 1248,
+    "p95": 1692,
+    "p99": 2181
+  },
+  "timestamp": "2026-11-17T15:13:22.761Z",
+  "status": "DEGRADED"
+}

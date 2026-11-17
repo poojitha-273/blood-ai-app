@@ -1,0 +1,10 @@
+{
+  "name": "blood-ai-test-reports",
+  "version": "1.0.0",
+  "description": "Blood AI Automated Excel Test Report Generator",
+  "main": "generate-excel-reports.js",
+  "type": "commonjs",
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}

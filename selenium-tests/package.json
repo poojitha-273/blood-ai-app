@@ -1,0 +1,14 @@
+{
+  "name": "blood-ai-selenium-tests",
+  "version": "1.0.0",
+  "description": "Selenium Web E2E Test Suite for Blood AI",
+  "main": "run-selenium-tests.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node run-selenium-tests.js"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.27.0",
+    "chromedriver": "^131.0.0"
+  }
+}

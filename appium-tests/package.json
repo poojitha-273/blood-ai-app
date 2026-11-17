@@ -1,0 +1,13 @@
+{
+  "name": "blood-ai-appium-tests",
+  "version": "1.0.0",
+  "description": "Appium Android E2E Test Suite for Blood AI",
+  "main": "run-appium-tests.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node run-appium-tests.js"
+  },
+  "dependencies": {
+    "webdriverio": "^8.36.0"
+  }
+}
