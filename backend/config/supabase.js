@@ -1,11 +1,11 @@
 const { createClient } = require('@supabase/supabase-js');
 const bcrypt = require('bcryptjs');
 
-let supabaseUrl = process.env.SUPABASE_URL || 'https://mkmkwvvousvrpghwaldt.supabase.co';
+let supabaseUrl = process.env.SUPABASE_URL || 'https://uycuocrqerkhycpnekdg.supabase.co';
 // Ensure URL does not have trailing /rest/v1 or /
 supabaseUrl = supabaseUrl.replace(/\/rest\/v1\/?$/, '').replace(/\/+$/, '');
 
-const supabaseKey = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_ANON_KEY || '';
+const supabaseKey = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_ANON_KEY || process.env.SUPABASE_PUBLISHABLE_KEY || 'sb_publishable_8QTpW_LbUOXi8zWWrviqQg_oIg47km0';
 
 let realClient = null;
 try {
