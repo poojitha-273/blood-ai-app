@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Blood AI Performance Benchmark Suite" tests="25" failures="0" errors="0" time="16">
+  <testsuite name="Soak Endurance Testing" tests="25" failures="0" errors="0" skipped="0" time="16" timestamp="2026-11-17T16:19:50.346Z">
+    <properties>
+      <property name="virtualUsers" value="30"/>
+      <property name="totalRequests" value="1163"/>
+      <property name="successfulRequests" value="1163"/>
+      <property name="failedRequests" value="0"/>
+      <property name="avgLatencyMs" value="370.9"/>
+      <property name="p95LatencyMs" value="936"/>
+      <property name="status" value="PASSED"/>
+    </properties>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/health [Sample 1] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/health [Sample 2] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/health [Sample 3] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/health [Sample 4] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/health [Sample 5] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/blood-requests [Sample 1] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/blood-requests [Sample 2] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/blood-requests [Sample 3] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/blood-requests [Sample 4] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/blood-requests [Sample 5] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/blood-requests/predict-demand [Sample 1] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/blood-requests/predict-demand [Sample 2] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/blood-requests/predict-demand [Sample 3] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/blood-requests/predict-demand [Sample 4] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/blood-requests/predict-demand [Sample 5] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/auth/verify-token [Sample 1] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/auth/verify-token [Sample 2] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/auth/verify-token [Sample 3] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/auth/verify-token [Sample 4] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/auth/verify-token [Sample 5] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/hospital/screening-decision [Sample 1] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/hospital/screening-decision [Sample 2] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/hospital/screening-decision [Sample 3] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/hospital/screening-decision [Sample 4] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.SoakEnduranceTesting" name="Endpoint /api/hospital/screening-decision [Sample 5] - Throughput &amp; Latency SLA Check" time="0.3709">
+      <system-out>Virtual Users: 30 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

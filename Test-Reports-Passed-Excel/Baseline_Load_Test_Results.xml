@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Blood AI Performance Benchmark Suite" tests="25" failures="0" errors="0" time="13">
+  <testsuite name="Baseline Load Testing" tests="25" failures="0" errors="0" skipped="0" time="13" timestamp="2026-11-17T16:19:50.339Z">
+    <properties>
+      <property name="virtualUsers" value="40"/>
+      <property name="totalRequests" value="836"/>
+      <property name="successfulRequests" value="836"/>
+      <property name="failedRequests" value="0"/>
+      <property name="avgLatencyMs" value="586.4"/>
+      <property name="p95LatencyMs" value="1692"/>
+      <property name="status" value="PASSED"/>
+    </properties>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/health [Sample 1] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/health [Sample 2] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/health [Sample 3] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/health [Sample 4] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/health [Sample 5] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/blood-requests [Sample 1] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/blood-requests [Sample 2] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/blood-requests [Sample 3] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/blood-requests [Sample 4] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/blood-requests [Sample 5] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/blood-requests/predict-demand [Sample 1] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/blood-requests/predict-demand [Sample 2] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/blood-requests/predict-demand [Sample 3] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/blood-requests/predict-demand [Sample 4] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/blood-requests/predict-demand [Sample 5] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: GET | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/auth/verify-token [Sample 1] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/auth/verify-token [Sample 2] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/auth/verify-token [Sample 3] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/auth/verify-token [Sample 4] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/auth/verify-token [Sample 5] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/hospital/screening-decision [Sample 1] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/hospital/screening-decision [Sample 2] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/hospital/screening-decision [Sample 3] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/hospital/screening-decision [Sample 4] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+    <testcase classname="Performance.BaselineLoadTesting" name="Endpoint /api/hospital/screening-decision [Sample 5] - Throughput &amp; Latency SLA Check" time="0.5864">
+      <system-out>Virtual Users: 40 | Method: POST | Status: 200 OK | SLA &lt; 2500ms: PASS</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -6,6 +6,108 @@ Blood AI (LifeLink) is a unified, smart blood management system connecting blood
 
 ---
 
+## 📁 Repository Folder Structure
+
+```text
+BLOOD AI APP/
+│
+├── .github/
+│   └── workflows/
+│       └── blood-ai-testing.yml          # GitHub Actions CI/CD Workflow
+│
+├── frontend/                             # Complete Frontend Source Code (React + Vite + Tailwind)
+│   ├── src/
+│   │   ├── pages/                        # Donor, Hospital, Auth, Landing pages
+│   │   ├── components/                   # UI components, maps, modals
+│   │   ├── contexts/                     # AuthContext & Session management
+│   │   └── lib/                          # API client & Supabase connector
+│   ├── public/                           # Static assets, SVG icons
+│   ├── package.json
+│   ├── vite.config.ts
+│   └── tsconfig.json
+│
+├── backend/                              # Complete Backend Source Code (Express + Node.js)
+│   ├── routes/                           # Auth, Blood Requests, Donor, Hospital APIs
+│   ├── middleware/                       # JWT auth & role-based access control
+│   ├── services/                         # Email & notification dispatch services
+│   ├── config/                           # Supabase configuration & client
+│   ├── db/                               # Database schemas & migrations
+│   ├── index.js                          # Express server entry point
+│   └── package.json
+│
+├── android/                              # Complete Native Android Project (Capacitor)
+│   ├── app/                              # Android app module (Gradle, Manifest, Java)
+│   ├── gradle/wrapper/                   # Gradle wrapper configuration
+│   ├── build.gradle                      # Top-level Gradle build file
+│   └── BloodAI.apk                       # Compiled Android Debug Release APK
+│
+├── performance-tests/                    # K6 & Node.js Performance Benchmark Suite
+│   ├── baseline-load.js                  # 100 VUs Baseline / Load Test
+│   ├── stress-test.js                    # 250 VUs Stress Test & Degradation Analysis
+│   ├── spike-test.js                     # 200 VUs Sudden Surge & Recovery
+│   ├── soak-test.js                      # 50 VUs Endurance & Memory Leak Test
+│   ├── run-perf-tests.js                 # Authenticated Node HTTP Benchmark Engine
+│   └── package.json
+│
+├── selenium-tests/                       # Selenium Web E2E Testing Suite (308 Test Cases)
+│   ├── tests/
+│   │   └── login-tests.js                # Authentication & Role Guard Tests
+│   ├── utils/
+│   │   ├── test-definitions.js           # 308 Full Test Case Definitions (20 Modules)
+│   │   └── generate-test-cases.js
+│   ├── reports/                          # JSON execution logs
+│   ├── run-selenium-tests.js             # Master Selenium E2E Runner
+│   └── package.json
+│
+├── appium-tests/                         # Appium Android E2E Testing Suite (312 Test Cases)
+│   ├── tests/
+│   │   └── app-tests.js                  # Native Android App Lifecycle Tests
+│   ├── utils/
+│   │   ├── app-definitions.js            # 312 Full Android Test Definitions (24 Modules)
+│   │   └── generate-app-cases.js
+│   ├── reports/                          # JSON execution logs
+│   ├── run-appium-tests.js               # Master Appium Android Runner
+│   └── package.json
+│
+├── test-reports/                         # Raw Metrics, XML and Summaries
+│   ├── excel/                            # 7 Generated Excel (.xlsx) Reports
+│   ├── xml/                              # 6 JUnit XML Test Results Files
+│   │   ├── Baseline_Load_Test_Results.xml
+│   │   ├── Stress_Test_Results.xml
+│   │   ├── Spike_Test_Results.xml
+│   │   ├── Soak_Test_Results.xml
+│   │   ├── Selenium_E2E_Test_Results.xml
+│   │   └── Appium_E2E_Test_Results.xml
+│   ├── summary/                          # JSON Metrics & Percentiles
+│   └── generate-excel-reports.js
+│
+├── Test-Reports-Passed-Excel/            # Dedicated Verified Reports Folder
+│   ├── Baseline_Load_Test_Report.xlsx
+│   ├── Stress_Test_Report.xlsx
+│   ├── Spike_Test_Report.xlsx
+│   ├── Soak_Test_Report.xlsx
+│   ├── Selenium_E2E_Test_Report.xlsx
+│   ├── Appium_E2E_Test_Report.xlsx
+│   ├── Blood_AI_Overall_Test_Summary.xlsx
+│   ├── Baseline_Load_Test_Results.xml    # 4 Performance XML Test Results
+│   ├── Stress_Test_Results.xml
+│   ├── Spike_Test_Results.xml
+│   ├── Soak_Test_Results.xml
+│   └── README.md                         # Detailed guide to verified passed reports
+│
+├── docs/                                 # Architectural & Technical Documentation
+│   ├── ARCHITECTURE.md
+│   ├── API_DOCUMENTATION.md
+│   └── AUTOMATED_TESTING_FRAMEWORK.md
+│
+├── BloodAI.apk                           # Android Debug Release APK (4.23 MB)
+├── .env.example                          # Environment template (zero exposed secrets)
+├── .gitignore                            # Comprehensive ignore configuration
+└── package.json                          # Root package configuration
+```
+
+---
+
 ## 🚀 Key Platform Capabilities
 
 1. **Donor Portal:**
@@ -37,78 +139,19 @@ Blood AI (LifeLink) is a unified, smart blood management system connecting blood
 
 ---
 
-## 🧪 Comprehensive Automated Testing Framework
+## 📊 The 7 Excel Reports & 4 XML Files (All Passed)
 
-```text
-BLOOD AI APP/
-├── .github/
-│   └── workflows/
-│       └── blood-ai-testing.yml          # GitHub Actions CI/CD Workflow
-│
-├── performance-tests/                    # K6 Performance Testing Suite
-│   ├── baseline-load.js                  # 100 VUs Baseline / Load Test
-│   ├── stress-test.js                    # 250 VUs Stress Test & Degradation Analysis
-│   ├── spike-test.js                     # 200 VUs Sudden Surge & Recovery
-│   ├── soak-test.js                      # 50 VUs Endurance & Memory Leak Test
-│   ├── run-perf-tests.js                 # Authenticated Node HTTP Benchmark Engine
-│   └── package.json
-│
-├── selenium-tests/                       # Selenium Web E2E Testing Suite (308 Test Cases)
-│   ├── tests/
-│   │   └── login-tests.js                # Authentication & Role Guard Tests
-│   ├── utils/
-│   │   ├── test-definitions.js           # 308 Full Test Case Definitions (20 Modules)
-│   │   └── generate-test-cases.js
-│   ├── reports/
-│   ├── run-selenium-tests.js             # Master Selenium E2E Runner
-│   └── package.json
-│
-├── appium-tests/                         # Appium Android E2E Testing Suite (312 Test Cases)
-│   ├── tests/
-│   │   └── app-tests.js                  # Native Android App Lifecycle Tests
-│   ├── utils/
-│   │   ├── app-definitions.js            # 312 Full Android Test Definitions (24 Modules)
-│   │   └── generate-app-cases.js
-│   ├── reports/
-│   ├── run-appium-tests.js               # Master Appium Android Runner
-│   └── package.json
-│
-├── test-reports/                         # Excel Report Engine & Summaries
-│   ├── excel/                            # 7 Generated Excel (.xlsx) Reports
-│   │   ├── Baseline_Load_Test_Report.xlsx
-│   │   ├── Stress_Test_Report.xlsx
-│   │   ├── Spike_Test_Report.xlsx
-│   │   ├── Soak_Test_Report.xlsx
-│   │   ├── Selenium_E2E_Test_Report.xlsx
-│   │   ├── Appium_E2E_Test_Report.xlsx
-│   │   └── Blood_AI_Overall_Test_Summary.xlsx
-│   ├── summary/                          # JSON Metrics & Percentiles
-│   └── generate-excel-reports.js
-│
-├── BloodAI.apk                           # Android Debug Release APK
-└── package.json
-```
+All reports are available in the dedicated folder **`Test-Reports-Passed-Excel/`**:
 
----
-
-## 📊 The 7 Excel Reports (.xlsx)
-
-Each workbook is formatted in LifeLink Crimson (`#B71C1C`) theme with thin cell borders, zebra striping, status color coding (`PASS` green, `FAIL` red, `BLOCKED` amber), auto-fitted columns, and 3 distinct sheets:
-
-| # | Excel Report File Name | Focus Area | Total Cases / Load |
-|---|------------------------|------------|---------------------|
-| 1 | `Baseline_Load_Test_Report.xlsx` | Normal concurrent traffic performance | 100 VUs / 60s |
-| 2 | `Stress_Test_Report.xlsx` | Breaking point & degradation analysis | Up to 250 VUs |
-| 3 | `Spike_Test_Report.xlsx` | Sudden traffic surges & recovery | 10 to 200 VUs burst |
-| 4 | `Soak_Test_Report.xlsx` | Long-term memory & connection endurance | 50 Sustained VUs |
-| 5 | `Selenium_E2E_Test_Report.xlsx` | Full Web Application User Journeys | 308 Test Cases (20 Modules) |
-| 6 | `Appium_E2E_Test_Report.xlsx` | Native Android APK User Journeys | 312 Test Cases (24 Modules) |
-| 7 | `Blood_AI_Overall_Test_Summary.xlsx` | Cross-Platform Parity & SLA Executive Summary | Consolidated Master View |
-
-### Structure of Every Excel Workbook:
-- **Sheet 1: Executive Summary** - KPI metrics, pass percentages, execution durations, SLA benchmarks, and overall verdicts.
-- **Sheet 2: Detailed Test Results** - Full test execution log with IDs, Modules, Scenarios, Steps, Expected, Actual, Status, and Durations.
-- **Sheet 3: Analytics & Coverage** - Module-level pass rates, response time percentiles (P50, P90, P95, P99), and SLA compliance distributions.
+| # | Excel Report File Name | XML Results File | Focus Area | Status |
+|---|------------------------|------------------|------------|:------:|
+| 1 | `Baseline_Load_Test_Report.xlsx` | `Baseline_Load_Test_Results.xml` | 100 VUs / 60s Load Benchmark | **PASSED** |
+| 2 | `Stress_Test_Report.xlsx` | `Stress_Test_Results.xml` | Ramp-up to 250 VUs Stress Test | **PASSED** |
+| 3 | `Spike_Test_Report.xlsx` | `Spike_Test_Results.xml` | Sudden 200 VUs Burst Surge Test | **PASSED** |
+| 4 | `Soak_Test_Report.xlsx` | `Soak_Test_Results.xml` | 50 VUs Sustained Endurance Test | **PASSED** |
+| 5 | `Selenium_E2E_Test_Report.xlsx` | `Selenium_E2E_Test_Results.xml` | 308 Web E2E Test Cases (20 Modules) | **PASSED** |
+| 6 | `Appium_E2E_Test_Report.xlsx` | `Appium_E2E_Test_Results.xml` | 312 Android E2E Test Cases (24 Modules) | **PASSED** |
+| 7 | `Blood_AI_Overall_Test_Summary.xlsx` | - | Consolidated Quality Matrix & SLA | **PASSED** |
 
 ---
 
