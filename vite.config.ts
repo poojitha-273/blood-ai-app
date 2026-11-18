@@ -31,6 +31,7 @@ export default defineConfig(({ mode }) => {
     '';
 
   return {
+    base: './',
     plugins: [react(), tailwindcss()],
     define: {
       'import.meta.env.VITE_GOOGLE_MAPS_API_KEY': JSON.stringify(googleMapsKey),
